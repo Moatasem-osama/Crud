@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud</title>
+    <link rel="stylesheet" href="boot-file/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <ul class="background">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+     </ul>
+      <h1 class="text-center">TO-DO-LIST</h1>
+      <section>
+          <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div>
+                        <input type="text" placeholder="Enter Your Task" class="form-control" id="inputNameTask">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div>
+                        <select name="" id="select" class="form-control">
+                            <option value="All">All</option>
+                            <option value="Pending">Pending</option>
+                            <option value="Completed">Completed</option>
+                         
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div>
+                        <button id="addTaskBtn" class="btn btn-primary w-100 my-3">Add</button>
+                        <button id="updateTaskBtn" class="btn btn-warning w-100 my-3 d-none">Update</button>
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <div>
+                        <input type="text" id="inputSearchTask" placeholder="Search" class="form-control">
+                    </div>
+                </div>
+            </div>
+          </div>
+
+      </section>
+
+      <section>
+        <div class="container">
+            <div class="w-75 vh-100 m-auto mt-4 p-4 rounded-5 big">
+                <h2 class="text-center text-white"></h2>
+                <div class="row" id="allTasks">
+                    
+                </div>
+            </div>
+        </div>
+      </section>
+    <script src="boot-file/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
